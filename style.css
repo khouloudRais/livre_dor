@@ -32,6 +32,11 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #1f1f1f; /* Couleur plus sombre pour la barre */
+    padding: 15px 0;  /* Espacement de la barre de navigation */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);  /* Ombre autour de la barre */
+    border-radius: 10px;  /* Coins arrondis pour un look plus doux */
+    margin-bottom: 30px; /* Marge sous la barre */
 }
 
 nav ul {
@@ -42,33 +47,35 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 25px;
+    margin: 0 20px;  /* Espacement entre les éléments de la navigation */
 }
 
 nav ul li a {
-    color: #d4af37;
+    color: #d4af37;  /* Couleur dorée pour les liens */
     text-decoration: none;
     font-size: 1.2rem;
-    font-weight: 600;
+    font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    padding: 8px 12px;
-    border-radius: 10px;
-    transition: color 0.3s ease, transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    letter-spacing: 2px;
+    padding: 10px 15px;
+    border-radius: 5px;  /* Coins arrondis pour les liens */
+    transition: all 0.3s ease;  /* Transition douce pour l'hover */
 }
 
 nav ul li a:hover {
-    color: #fff;
-    background-color: rgba(212, 175, 55, 0.2);
-    transform: translateY(-4px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    color: #fff;  /* Couleur des liens au survol */
+    background-color: #d4af37;  /* Fond doré au survol */
+    transform: translateY(-5px);  /* Légère élévation au survol */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);  /* Ombre plus forte au survol */
 }
 
 nav ul li a.active {
-    color: #fff;
-    text-decoration: underline;
-    background-color: rgba(212, 175, 55, 0.3);
+    color: #fff;  /* Texte blanc pour le lien actif */
+    background-color: #c29e2e;  /* Fond doré plus clair pour le lien actif */
+    border: 2px solid #d4af37;  /* Bordure dorée autour du lien actif */
+    transform: scale(1.1);  /* Légère mise en évidence du lien actif */
 }
+
 
 
 h1 {
@@ -80,6 +87,16 @@ h1 {
     font-weight: 600;
     animation: fadeIn 2s ease-out; 
 }
+h2 {
+    font-size: 2.5rem;  /* Taille de la police pour h2 */
+    color: #d4af37;  /* Couleur dorée, comme dans le reste du site */
+    text-align: center;  /* Centrer le texte */
+    margin-top: 3rem;  /* Ajouter un peu d'espace au-dessus du titre */
+    text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.7);  /* Ombre portée du texte */
+    font-weight: 600;  /* Poids de la police */
+    animation: fadeIn 2s ease-out;  /* Animation d'apparition, comme pour h1 */
+}
+
 
 
 

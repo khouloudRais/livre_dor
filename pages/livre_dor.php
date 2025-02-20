@@ -10,6 +10,7 @@
   
     <header>
     <h1>Livre d'Or</h1>
+    
    
     </header>
 
@@ -20,6 +21,7 @@
                 <li><a href="../index.php">Accueil</a></li>
                 <li><a href="commentaires.php">Ajouter un message</a></li>
                 <li><a href="connexion.php">Deconnexion</a></li>
+                <li><a href="profil.php">Modifier ton profil</a></li>
             </ul>
         </nav>
         <section class="livre-or">

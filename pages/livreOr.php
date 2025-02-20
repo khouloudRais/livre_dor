@@ -8,7 +8,7 @@ class LivreOr {
         try {
             // Connexion à la base de données
             $this->pdo = new PDO('mysql:host=localhost;dbname=livreor', 'root', '');
-            $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); // Activer le mode d'erreur
+            $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); 
         } catch (PDOException $e) {
             // Gestion des erreurs de connexion
             die("Erreur de connexion à la base de données : " . $e->getMessage());
