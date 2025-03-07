@@ -1,185 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #111;
+    color: #e6d8b9;
+    line-height: 1.6;
+    padding: 0;
+    transition: background-color 0.3s ease-in-out;
+}
 
-        body {
-            font-family: 'Helvetica Neue', sans-serif;
-            background-color: #111;
-            color: #e6d8b9;
-            line-height: 1.6;
-            padding: 0;
-            transition: background-color 0.3s ease-in-out;
-        }
+header {
+    background-color: #222;
+    color: #d4af37;
+    padding: 20px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
+    transition: background-color 0.3s ease-in-out;
+}
 
-        header {
-            background-color: #222;
-            color: #d4af37;
-            padding: 20px 0;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
-            margin-bottom: 50px;
-            transition: background-color 0.3s ease-in-out;
-        }
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
 
-        header:hover {
-            background-color: #1d1d1d; 
-        }
-
-        nav {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        nav ul {
-            list-style-type: none;
-            display: flex;
-            padding: 0;
-            margin: 0;
-        }
-
-        nav ul li {
-            margin: 0 25px;
-        }
-
-        nav ul li a {
-            color: #d4af37;
-            text-decoration: none;
-            font-size: 1.2rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            padding: 8px 12px;
-            border-radius: 10px;
-            transition: color 0.3s ease, transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        nav ul li a:hover {
-            color: #fff;
-            background-color: rgba(212, 175, 55, 0.2);
-            transform: translateY(-4px);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-        }
-
-        nav ul li a.active {
-            color: #fff;
-            text-decoration: underline;
-            background-color: rgba(212, 175, 55, 0.3);
-        }
-
-        h1 {
-            font-size: 3.5rem;
-            color: #d4af37;
-            text-align: center;
-            margin-top: 3rem;
-            text-shadow: 4px 4px 20px rgba(0, 0, 0, 0.7);
-            font-weight: 600;
-            animation: fadeIn 2s ease-out; 
-        }
-
-        form {
-            background-color: #222;
-            padding: 30px;
-            margin: 30px auto;
-            width: 80%;
-            max-width: 700px;
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
-            border: 1px solid #d4af37;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        form:hover {
-            transform: scale(1.02);
-            box-shadow: 0 6px 30px rgba(0, 0, 0, 0.8);
-        }
-
-        form label {
-            color: #e6d8b9;
-            font-size: 1.1rem;
-            font-weight: 600;
-            margin-bottom: 5px;
-            display: inline-block;
-        }
-
-        form input[type="text"],
-        form input[type="email"] {
-            width: 100%;
-            padding: 15px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-            border: 2px solid #444;
-            background-color: #333;
-            color: #e6d8b9;
-            font-size: 1rem;
-            transition: border-color 0.3s ease, background-color 0.3s ease;
-        }
-
-        form input[type="text"]:focus,
-        form input[type="email"]:focus {
-            border-color: #d4af37;
-            background-color: #444;
-            outline: none;
-        }
-
-        form button {
-            background-color: #d4af37;
-            color: #1a1a1a;
-            padding: 12px 30px;
-            border: none;
-            border-radius: 25px;
-            font-size: 1.2rem;
-            font-weight: 600;
-            cursor: pointer;
-            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
-        }
-
-        form button:hover {
-            background-color: #c29e2e;
-            transform: translateY(-4px);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-        }
-
-        form button:active {
-            background-color: #b88f1f;
-            transform: translateY(1px);
-        }
-
-        footer {
-            text-align: center;
-            background-color: #1f1f1f;
-            color: #e6d8b9;
-            padding: 20px;
-            font-size: 1rem;
-            width: 100%;
-            box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.8);
-            margin-top: 50px;
-            transition: background-color 0.3s ease;
-        }
-
-        footer:hover {
-            background-color: #2a2a2a;
-        }
-
-        /* Responsivité */
-        @media (max-width: 768px) {
-            nav ul {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            form {
-                width: 90%;
-                margin: 20px auto;
-            }
-
-            h1 {
-                font-size: 2.5rem;
-            }
-        }
+h1 {
+    font-size: 2rem;
+    color: #d4af37;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+}
 
 
- 
-         
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-evenly; /* Cela permet de répartir les éléments avec un espacement égal */
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
+    margin-bottom: 40px;
+    border-radius: 8px;
+}
+
+/* Liens du menu */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0; /* Ajout de padding: 0 pour s'assurer qu'il n'y a pas d'espacement par défaut */
+    margin: 0; /* Ajout de margin: 0 pour s'assurer qu'il n'y a pas d'espacement par défaut */
+}
+
+nav ul li {
+    /* Retirer l'espacement de chaque item pour un espacement uniforme */
+    margin: 0;
+}
+
+nav ul li a {
+    color: #d4af37;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 8px 20px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #d4af37;
+    color: #1a1a1a;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+
+
+
+form {
+    background-color: #222;
+    padding: 30px;
+    margin: 30px auto;
+    width: 80%;
+    max-width: 700px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+    border: 1px solid #d4af37;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+form:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.8);
+}
+
+form label {
+    color: #e6d8b9;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+form input[type="text"],
+form input[type="email"] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 2px solid #444;
+    background-color: #333;
+    color: #e6d8b9;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus {
+    border-color: #d4af37;
+    background-color: #444;
+    outline: none;
+}
+
+form button {
+    background-color: #d4af37;
+    color: #1a1a1a;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    margin-top: 20px;
+}
+
+form button:hover {
+    background-color: #c29e2e;
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+form button:active {
+    background-color: #b88f1f;
+    transform: translateY(1px);
+}
+
+footer {
+    text-align: center;
+    background-color: #1f1f1f;
+    color: #e6d8b9;
+    padding: 20px;
+    font-size: 1rem;
+    width: 100%;
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.8);
+    margin-top: 50px;
+    transition: background-color 0.3s ease;
+}
+
+footer:hover {
+    background-color: #2a2a2a;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    form label {
+        font-size: 1rem;
+    }
+
+    form input[type="text"],
+    form input[type="email"] {
+        padding: 12px;
+    }
+
+    form button {
+        padding: 12px 28px;
+        font-size: 1.1rem;
+    }
+}
+

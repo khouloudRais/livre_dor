@@ -1,0 +1,257 @@
+/* Réinitialisation globale */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles pour le body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222; /* Fond sombre */
+    color: #f1f1f1; /* Texte clair */
+   
+}
+
+/* Styles du header */
+header {
+    background-color: #222;
+    color: #d4af37;
+    padding: 20px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
+    transition: background-color 0.3s ease-in-out;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #d4af37;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
+    margin-bottom: 40px;
+    border-radius: 8px;
+}
+
+/* Liens du menu */
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-evenly; /* Cela permet de répartir les éléments avec un espacement égal */
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
+    margin-bottom: 40px;
+    border-radius: 8px;
+}
+
+/* Liens du menu */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0; /* Ajout de padding: 0 pour s'assurer qu'il n'y a pas d'espacement par défaut */
+    margin: 0; /* Ajout de margin: 0 pour s'assurer qu'il n'y a pas d'espacement par défaut */
+}
+
+nav ul li {
+    /* Retirer l'espacement de chaque item pour un espacement uniforme */
+    margin: 0;
+}
+
+nav ul li a {
+    color: #d4af37;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 8px 20px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #d4af37;
+    color: #1a1a1a;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+
+/* Formulaire de recherche */
+nav .search-form {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav .search-input {
+    padding: 5px 10px;
+    font-size: 1rem;
+    border-radius: 25px;
+    border: 2px solid #444;
+    background-color: #555;
+    color: #e6d8b9;
+    margin-right: 10px;
+    transition: border-color 0.3s ease;
+}
+
+nav .search-input:focus {
+    border-color: #d4af37;
+    background-color: #444;
+    outline: none;
+}
+
+nav .search-button {
+    padding: 8px 15px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #d4af37;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+nav .search-button:hover {
+    background-color: #c29e2e;
+}
+
+/* Styles du formulaire */
+form {
+    background-color: rgba(212, 175, 55, 0.3); /* Fond doré translucide */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+    background: #333; /* Assure que le fond est sombre */
+}
+
+/* Styles des labels */
+label {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: rgba(249, 242, 242, 0.955); /* Couleur claire */
+}
+
+/* Champs de texte et de saisie */
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 2px solid #444; /* Bordure discrète */
+    border-radius: 6px;
+    background: #222; /* Fond sombre */
+    color: #f1f1f1;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Effet lors du survol des champs */
+input:hover, textarea:hover {
+    border-color: #f39c12; /* Jaune doré */
+}
+
+/* Effet lors du focus (clic) sur les champs */
+input:focus, textarea:focus {
+    border-color: #f1c40f; /* Jaune doré */
+    box-shadow: 0 0 10px rgba(241, 196, 15, 0.7);
+    outline: none;
+    background: #333; /* Léger éclaircissement pour mieux voir */
+}
+
+/* Style spécifique pour la zone de texte (textarea) */
+textarea {
+    height: 150px;
+    resize: none;
+}
+
+/* Bouton d'envoi */
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1rem;
+    background-color: #0f0919; /* Couleur sombre pour le bouton */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+/* Effet de survol du bouton */
+button:hover {
+    background-color: #130f2c; /* Couleur plus claire au survol */
+}
+
+/* Message de confirmation */
+p {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #dbd802; /* Jaune doré pour la confirmation */
+    margin-top: 20px;
+}
+
+/* Message d'erreur */
+p.error {
+    color: #e74c3c; /* Rouge pour l'erreur */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #1f1f1f;
+    color: #e6d8b9;
+    padding: 20px;
+    font-size: 1rem;
+    width: 100%;
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.8);
+    margin-top: 250px;
+    transition: background-color 0.3s ease;
+}
+
+/* Effet de survol du footer */
+footer:hover {
+    background-color: #2a2a2a; /* Légèrement plus clair au survol */
+}
+
+/* Media Queries pour adapter l'affichage sur mobile */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        margin-bottom: 10px;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
